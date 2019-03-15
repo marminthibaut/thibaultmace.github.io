@@ -21,11 +21,17 @@
 		});
 
 	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+    // 	$window.on('load', function() {
+    // 		window.setTimeout(function() {
+    // 			$body.removeClass('is-preload');
+    // 		}, 100);
+    // 	});
+
+    $(document).ready(function () {
+        window.setTimeout(function () {
+            $body.removeClass('is-preload');
+        }, 100);
+    });
 
 	// Hack: Enable IE workarounds.
 		if (browser.name == 'ie')
